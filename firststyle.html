@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CIS133DA CSS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="dcterms.rightsHolder" content="Edward Muniz" />
+    <meta name="dcterms.dateCopyrighted" content="2019" />
+    <meta name="description" content="Super shiny css" />
+    <meta name="keywords" content="pretty awesome cool shiny super" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9bf2aeb3dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="content-container">
+      <aside id="side-bar">
+        <div id="html-validator"></div>
+        <div id="css-validator"></div>
+        <div id="webaim"></div>
+      </aside>
+      <div class="main">
+        <div class="row">
+          <section>
+            <nav>
+              <a href="#">Overview</a>
+              <a href="#">Tasks</a>
+              <a href="#">Stories</a>
+              <a href="#">Admin</a>
+            </nav>
+            <div class="buffer">
+              <table>
+                <caption>
+                  Task Overview
+                </caption>
+                <thead>
+                  <tr>
+                    <th id="task" scope="col">Task Name</th>
+                    <th id="goal" scope="col">Goal</th>
+                    <th id="owner" scope="col">Owner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th id="feed-army" scope="row">
+                      feed army
+                    </th>
+                    <td headers="feed-army goal">Build army</td>
+                    <td headers="feed-army owner" class="greyworm">
+                      Grey Worm
+                    </td>
+                  </tr>
+                  <tr>
+                    <th id="discover-support-source" scope="row">
+                      discover source of support
+                    </th>
+                    <td headers="discover-support-source goal" rowspan="3">
+                      Crush resistance
+                    </td>
+                    <td
+                      headers="discover-support-source owner"
+                      class="tyrion"
+                      rowspan="2"
+                    >
+                      Tyrion Lannister
+                    </td>
+                  </tr>
+                  <tr>
+                    <th id="identify-leadership" scope="row">
+                      identify leadership
+                    </th>
+                  </tr>
+                  <tr>
+                    <th id="discredit-cause" scope="row">
+                      discredit their cause
+                    </th>
+                    <td headers="discredit-cause owner" class="daenerys">
+                      Daenerys Targaryen
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" id="discover-costs">discover costs</th>
+                    <td headers="discover-costs goal" rowspan="3">Get Navy</td>
+                    <td
+                      headers="discover-costs owner"
+                      class="tyrion"
+                      rowspan="3"
+                    >
+                      Tyrion Lannister
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" id="get-captains">
+                      get captains for ships
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row" id="find-source">find source for ships</th>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="2" id="feed-dragons">
+                      feed dragons
+                    </th>
+                    <td headers="feed-dragons owner">None</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+        <footer>
+          <script>
+            document.getElementById(
+              "html-validator"
+            ).innerHTML = `<a href="http://validator.w3.org/nu/?doc=${window.location.href}" target="_blank"><i class="fab fa-html5"></i> HTML Validation</a>`;
+
+            document.getElementById(
+              "css-validator"
+            ).innerHTML = `<a href="${window.location.href}" target="_blank"><i class="fab fa-css3-alt"></i> CSS Validation</a>`;
+
+            document.getElementById(
+              "webaim"
+            ).innerHTML = `<a href="${window.location.href}" target="_blank"><i class="fas fa-universal-access"></i> WebAIM Validation</a>`;
+          </script>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
